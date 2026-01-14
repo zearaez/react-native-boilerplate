@@ -76,3 +76,4 @@ yarn-error.log
 
 DEVELOPMENT_PLAN.md
 .github/copilot-instructions.md
+yarn.lock
