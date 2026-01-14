@@ -11,11 +11,11 @@ First, you will need to run **Metro**, the JavaScript build tool for React Nativ
 To start the Metro dev server, run the following command from the root of your React Native project:
 
 ```sh
-# Using npm
-npm start
-
-# OR using Yarn
+# Using Yarn (recommended)
 yarn start
+
+# OR using npm
+npm start
 ```
 
 ## Step 2: Build and run your app
@@ -25,11 +25,11 @@ With Metro running, open a new terminal window/pane from the root of your React 
 ### Android
 
 ```sh
-# Using npm
-npm run android
-
-# OR using Yarn
+# Using Yarn (recommended)
 yarn android
+
+# OR using npm
+npm run android
 ```
 
 ### iOS
@@ -51,11 +51,11 @@ bundle exec pod install
 For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
 ```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
+# Using Yarn (recommended)
 yarn ios
+
+# OR using npm
+npm run ios
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
@@ -72,6 +72,22 @@ When you want to forcefully reload, for example to reset the state of your app, 
 
 - **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
 - **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+
+## Development notes
+
+### Package manager
+
+This repo uses Yarn as the primary package manager.
+
+### Pre-commit checks
+
+Pre-commit hooks run formatting (Prettier) and linting (ESLint) on staged files.
+
+To bypass hooks for a single commit (not recommended), use:
+
+```sh
+git commit --no-verify
+```
 
 ## Congratulations! :tada:
 

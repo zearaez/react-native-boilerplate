@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# react native
+android/
+ios/
+
+# build artifacts
+build/
+dist/
+coverage/
+
+# misc
+*.log
+.DS_Store
